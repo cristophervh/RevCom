@@ -1,0 +1,41 @@
+  .btn {
+    background-image: linear-gradient(-45deg, #28348A, #662482);
+    border:0px;
+    width:150px;
+    color: white;
+  }
+
+  .dropdown-item {
+    background-color: white;
+    color: #662482;
+
+
+
+  }
+
+  .dropdown-item .new {
+    background-color: #28348A;
+    color: white;
+
+
+  }
+
+
+
+  .TextoGradiente {
+    background-image: linear-gradient(-45deg, #28348A, #662482);
+    -webkit-background-clip: text;
+    color: transparent;  
+  }
+
+
+  .dropdown-item {
+    margin: 0;
+    list-style: none;
+    white-space: nowrap;
+    border: 1px solid  #662482;
+    padding: 10px;
+    background-color: #ffffff;
+  }
+  
+  

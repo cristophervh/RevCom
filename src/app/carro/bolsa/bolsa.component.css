@@ -1,0 +1,29 @@
+.Titulo {
+    font-size: 35px;
+}
+
+.Subtitulo {
+    margin-top: -15px;
+    font-size:18px;
+
+}
+
+.Envio {
+    margin-top: -15px;
+    font-size:18px;
+    color: #662482;
+}
+
+.btn {
+    background-image: linear-gradient(-45deg, #28348A, #662482);
+    border:0px;
+    width:150px;
+    margin-top:35px;
+
+    }
+
+    .Costo {
+        font-size:50px;
+        margin-top: 15px;
+
+    }

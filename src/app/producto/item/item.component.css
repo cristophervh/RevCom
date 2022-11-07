@@ -1,0 +1,35 @@
+.precio {
+    font-size: 40px;
+}
+.oferta {
+    border-radius: 15px;
+    background-color: blue;
+    color: white;
+    font-size: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.btn {
+    background-image: linear-gradient(-45deg, #28348A, #662482);
+    border:0px;
+    width:150px;
+
+
+    }
+
+.c1 {
+        font-size: 18px;
+    }
+.vendedor a {
+    color: black;
+    text-decoration-color:#662482;
+
+    }
+    .carousel-control-next,
+.carousel-control-prev,
+.carousel-indicators
+
+/*, .carousel-indicators */ {
+    filter: invert(100%);
+}

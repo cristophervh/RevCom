@@ -1,0 +1,232 @@
+
+<br><div class="container">
+
+    <div style="text-align:center;">
+    <h1>ADATA</h1>
+    <p>Reputación:<img src="../../../assets/home/star.png" alt="..." style="margin-top:-5px; margin-left: 5px;"><img src="../../../assets/home/star.png" alt="..." style="margin-top:-5px; margin-left: 5px;"><img src="../../../assets/home/star.png" alt="..." style="margin-top:-5px; margin-left: 5px;"><img src="../../../assets/home/star.png" alt="..." style="margin-top:-5px; margin-left: 5px;"><img src="../../../assets/home/star.png" alt="..." style="margin-top:-5px; margin-left: 5px;">
+    </p>
+    </div>
+
+<ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+  <p style="margin-top:-2px;"> <img src="../../../assets/home/Filtro.png" alt="...">Filtrar por: </p>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="nombre-tab" data-bs-toggle="tab" data-bs-target="#nombre-tab-pane" type="button" role="tab" aria-controls="nombre-tab-pane" aria-selected="false">Nombre</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="estado-tab" data-bs-toggle="tab" data-bs-target="#estado-tab-pane" type="button" role="tab" aria-controls="estado-tab-pane" aria-selected="false">Estado</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="categoria-tab" data-bs-toggle="tab" data-bs-target="#categoria-tab-pane" type="button" role="tab" aria-controls="categoria-tab-pane" aria-selected="false">Categoria</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="condicion-tab" data-bs-toggle="tab" data-bs-target="#condicion-tab-pane" type="button" role="tab" aria-controls="condicion-tab-pane" aria-selected="false">Condición</button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" id="fecha-tab" data-bs-toggle="tab" data-bs-target="#fecha-tab-pane" type="button" role="tab" aria-controls="fecha-tab-pane" aria-selected="false">Fecha</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="venta-tab" data-bs-toggle="tab" data-bs-target="#venta-tab-pane" type="button" role="tab" aria-controls="venta-tab-pane" aria-selected="false">No Venta</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="precio-tab" data-bs-toggle="tab" data-bs-target="#precio-tab-pane" type="button" role="tab" aria-controls="precio-tab-pane" aria-selected="false">Precio</button>
+      </li>
+      
+
+
+      <div class="dropdown">
+        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Ordenar
+        </a>
+      
+        <ul class="dropdown-menu">
+          <li><p class="dropdown-item2">Stock</p></li>
+          <li><a class="dropdown-item" href="#">Ascendiente 
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sort-alpha-down" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M10.082 5.629 9.664 7H8.598l1.789-5.332h1.234L13.402 7h-1.12l-.419-1.371h-1.781zm1.57-.785L11 2.687h-.047l-.652 2.157h1.351z"/>
+              <path d="M12.96 14H9.028v-.691l2.579-3.72v-.054H9.098v-.867h3.785v.691l-2.567 3.72v.054h2.645V14zM4.5 2.5a.5.5 0 0 0-1 0v9.793l-1.146-1.147a.5.5 0 0 0-.708.708l2 1.999.007.007a.497.497 0 0 0 .7-.006l2-2a.5.5 0 0 0-.707-.708L4.5 12.293V2.5z"/>
+            </svg>
+          </a></li>
+          <li><a class="dropdown-item" href="#">Descenciente
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sort-alpha-down-alt" viewBox="0 0 16 16">
+              <path d="M12.96 7H9.028v-.691l2.579-3.72v-.054H9.098v-.867h3.785v.691l-2.567 3.72v.054h2.645V7z"/>
+              <path fill-rule="evenodd" d="M10.082 12.629 9.664 14H8.598l1.789-5.332h1.234L13.402 14h-1.12l-.419-1.371h-1.781zm1.57-.785L11 9.688h-.047l-.652 2.156h1.351z"/>
+              <path d="M4.5 2.5a.5.5 0 0 0-1 0v9.793l-1.146-1.147a.5.5 0 0 0-.708.708l2 1.999.007.007a.497.497 0 0 0 .7-.006l2-2a.5.5 0 0 0-.707-.708L4.5 12.293V2.5z"/>
+            </svg>
+          </a></li>
+          <li><p class="dropdown-item2">Título</p></li>
+          <li><a class="dropdown-item" href="#">Ascendiente 
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sort-alpha-down" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M10.082 5.629 9.664 7H8.598l1.789-5.332h1.234L13.402 7h-1.12l-.419-1.371h-1.781zm1.57-.785L11 2.687h-.047l-.652 2.157h1.351z"/>
+              <path d="M12.96 14H9.028v-.691l2.579-3.72v-.054H9.098v-.867h3.785v.691l-2.567 3.72v.054h2.645V14zM4.5 2.5a.5.5 0 0 0-1 0v9.793l-1.146-1.147a.5.5 0 0 0-.708.708l2 1.999.007.007a.497.497 0 0 0 .7-.006l2-2a.5.5 0 0 0-.707-.708L4.5 12.293V2.5z"/>
+            </svg>
+          </a></li>
+          <li><a class="dropdown-item" href="#">Descenciente
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sort-alpha-down-alt" viewBox="0 0 16 16">
+              <path d="M12.96 7H9.028v-.691l2.579-3.72v-.054H9.098v-.867h3.785v.691l-2.567 3.72v.054h2.645V7z"/>
+              <path fill-rule="evenodd" d="M10.082 12.629 9.664 14H8.598l1.789-5.332h1.234L13.402 14h-1.12l-.419-1.371h-1.781zm1.57-.785L11 9.688h-.047l-.652 2.156h1.351z"/>
+              <path d="M4.5 2.5a.5.5 0 0 0-1 0v9.793l-1.146-1.147a.5.5 0 0 0-.708.708l2 1.999.007.007a.497.497 0 0 0 .7-.006l2-2a.5.5 0 0 0-.707-.708L4.5 12.293V2.5z"/>
+            </svg>
+          </a></li>
+          <li><p class="dropdown-item2">Stock</p></li>
+          <li><a class="dropdown-item" href="#">Ascendiente 
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sort-alpha-down" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M10.082 5.629 9.664 7H8.598l1.789-5.332h1.234L13.402 7h-1.12l-.419-1.371h-1.781zm1.57-.785L11 2.687h-.047l-.652 2.157h1.351z"/>
+              <path d="M12.96 14H9.028v-.691l2.579-3.72v-.054H9.098v-.867h3.785v.691l-2.567 3.72v.054h2.645V14zM4.5 2.5a.5.5 0 0 0-1 0v9.793l-1.146-1.147a.5.5 0 0 0-.708.708l2 1.999.007.007a.497.497 0 0 0 .7-.006l2-2a.5.5 0 0 0-.707-.708L4.5 12.293V2.5z"/>
+            </svg>
+          </a></li>
+          <li><a class="dropdown-item" href="#">Descenciente
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sort-alpha-down-alt" viewBox="0 0 16 16">
+              <path d="M12.96 7H9.028v-.691l2.579-3.72v-.054H9.098v-.867h3.785v.691l-2.567 3.72v.054h2.645V7z"/>
+              <path fill-rule="evenodd" d="M10.082 12.629 9.664 14H8.598l1.789-5.332h1.234L13.402 14h-1.12l-.419-1.371h-1.781zm1.57-.785L11 9.688h-.047l-.652 2.156h1.351z"/>
+              <path d="M4.5 2.5a.5.5 0 0 0-1 0v9.793l-1.146-1.147a.5.5 0 0 0-.708.708l2 1.999.007.007a.497.497 0 0 0 .7-.006l2-2a.5.5 0 0 0-.707-.708L4.5 12.293V2.5z"/>
+            </svg>
+          </a></li>
+        </ul>
+        
+        
+      </div>
+
+
+
+
+  </ul>
+  <div class="tab-content" id="myTabContent" style="text-align:center;">
+    <div class="tab-pane fade show active" id="nombre-tab-pane" role="tabpanel" aria-labelledby="nombre-tab" tabindex="0" style="text-align:center;">
+
+
+
+      <div class="input-group" style="width:50%; margin-left: 330px;">
+        <input type="search" class="form-control rounded" placeholder="Buscar" aria-label="Search" aria-describedby="search-addon" />
+        <button type="button" class="btn btn-outline-primary">Filtrar</button>
+      </div>
+
+
+
+    </div>
+    <div class="tab-pane fade" id="estado-tab-pane" role="tabpanel" aria-labelledby="estado-tab" tabindex="0">
+
+ <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio2" value="option2" checked>
+        <label class="form-check-label" for="inlineRadio2">Pausada</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio1" value="option1" >
+        <label class="form-check-label" for="inlineRadio1">Activa</label>
+      </div>
+     
+     
+
+
+    </div>
+    <div class="tab-pane fade" id="categoria-tab-pane" role="tabpanel" aria-labelledby="categoria-tab" tabindex="0">
+
+
+      <button type="button" class="btn btn-primary btn-sm">Vehiculos<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16" style="margin-top: -2px;">
+        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+      </svg></button>
+      <button type="button" class="btn btn-primary btn-sm" style="margin-left:2px;">Tecnología </button>
+      <button type="button" class="btn btn-primary btn-sm" style="margin-left:2px;">Electrodomésticos</button>
+      <button type="button" class="btn btn-primary btn-sm" style="margin-left:2px;">Hogar y Muebles</button>
+      <button type="button" class="btn btn-primary btn-sm" style="margin-left:2px;">Moda</button>
+      <button type="button" class="btn btn-primary btn-sm" style="margin-left:2px;">Construcción</button>
+      <button type="button" class="btn btn-primary btn-sm" style="margin-left:2px;">Inmuebles</button>
+      <button type="button" class="btn btn-primary btn-sm" style="margin-left:2px;">Bebes</button>
+
+
+
+
+
+
+
+
+
+    </div>
+    <div class="tab-pane fade" id="condicion-tab-pane" role="tabpanel" aria-labelledby="condicion-tab" tabindex="0">
+
+
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" name="flexRadioDefault1" id="flexRadioDefault4" checked>
+        <label class="form-check-label" for="flexRadioDefault4">
+          Nuevo
+        </label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" name="flexRadioDefault1" id="flexRadioDefault5">
+        <label class="form-check-label" for="flexRadioDefault5">
+          Seminuevo
+        </label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" name="flexRadioDefault1" id="flexRadioDefault6">
+        <label class="form-check-label" for="flexRadioDefault6">
+          Usado
+        </label>
+      </div>
+
+
+
+    </div>
+    <div class="tab-pane fade" id="fecha-tab-pane" role="tabpanel" aria-labelledby="fecha-tab" tabindex="0">
+      
+     
+
+  
+        <div class="row justify-content-center">
+            <div class="col-lg-3 col-sm-6">
+                <label for="startDate"><p class="TextoGradiente">Incio</p></label>
+                <input id="startDate" class="form-control" type="date" />
+                <span id="startDateSelected"></span>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <label for="endDate"><p class="TextoGradiente">Termino</p></label>
+                <input id="endDate" class="form-control" type="date" />
+                <span id="endDateSelected"></span>
+            </div>
+        </div>
+
+
+
+
+
+
+    </div>
+    <div class="tab-pane fade" id="venta-tab-pane" role="tabpanel" aria-labelledby="venta-tab" tabindex="0">
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  
+  <div class="input-group" style="width: 50%; margin-left: 320px;">
+    <span class="input-group-text" id="zValueLabel">Mínimo:5</span>
+    <input type="range" class="form-range form-control me-3 px-1" id="zValue" name="zValue" value="0" min="5" max="10" step="1" oninput="this.nextElementSibling.value = this.value">
+  <output>0</output>&nbsp;&nbsp;&nbsp;&nbsp;
+
+  <span class="input-group-text" id="zValueLabel">Máximo:10</span>
+    <input type="range" class="form-range form-control me-3 px-1" id="zValue" name="zValue" value="0" min="5" max="10" step="1" oninput="this.nextElementSibling.value = this.value">
+  <output>0</output>
+  </div>
+  
+
+
+
+
+    </div>
+    <div class="tab-pane fade" id="precio-tab-pane" role="tabpanel" aria-labelledby="precio-tab" tabindex="0">
+
+      
+
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+      
+      <div class="input-group" style="width: 50%; margin-left: 320px;">
+        <span class="input-group-text" id="zValueLabel">Mínimo:50</span>
+        <input type="range" class="form-range form-control me-3 px-1" id="zValue" name="zValue" value="0" min="50" max="5000" step="1" oninput="this.nextElementSibling.value = this.value">
+      <output>0</output>&nbsp;&nbsp;&nbsp;&nbsp;
+    
+      <span class="input-group-text" id="zValueLabel">Máximo:5000</span>
+        <input type="range" class="form-range form-control me-3 px-1" id="zValue" name="zValue" value="0" min="50" max="5000" step="1" oninput="this.nextElementSibling.value = this.value">
+      <output>0</output>
+      </div>
+</div>
+

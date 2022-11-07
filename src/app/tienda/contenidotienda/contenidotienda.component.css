@@ -1,0 +1,89 @@
+.card-text {
+    font-size:30px;
+    font-weight:bold;
+    color: red;
+    margin-top:-15px;
+}
+
+.Titulo {
+    font-size:25px;
+    margin-top:-25px;
+    font-weight:bold; 
+}
+
+
+.Propiedades {
+    margin-top: -20px;
+}
+.btn-secondary {
+
+    background-color: white;
+    width:150px;
+    color: black;
+    outline-color: #662482;
+
+
+}
+
+.btn-primary {
+
+    background-image: linear-gradient(-45deg, #28348A, #662482);
+    border:0px;
+    width:150px;
+    color: white;
+
+}
+
+.Precio {  
+    font-size: 72px;  
+    background: -webkit-linear-gradient(-45deg, #28348A, #662482);
+    background: linear-gradient(-45deg, #28348A, #662482);
+    -webkit-background-clip: text;  
+    -webkit-text-fill-color: transparent;  
+  }  
+
+
+
+  body {
+    padding: 100px;
+    font-family: sans-serif;
+    text-align: center;
+
+
+  }
+  
+  p {
+    max-width: 500px;
+    margin: auto;
+  }
+  
+  span {
+    font-size: calc(1rem * var(--tag-multiplier));
+  }
+
+  .border-primary {
+    border-color: #28348A!important;
+    background: -webkit-linear-gradient(-45deg, #28348A, #662482);
+    background: linear-gradient(-45deg, #28348A, #662482);
+    -webkit-background-clip: text;  
+    -webkit-text-fill-color: transparent;  
+}
+
+
+
+
+.labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top:20px;
+
+}
+.progress {
+  height: 5px;
+}
+.progress-bar {
+background: -webkit-linear-gradient(-45deg, #28348A, #662482); /* Chrome10-25,Safari5.1-6 */
+}
+
+
+
