@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { NgxSliderModule } from '@angular-slider/ngx-slider';
 import { MenuComponent } from './home/menu/menu.component';
 import { FooterComponent } from './home/footer/footer.component';
 import { RevcomComponent } from './home/revcom/revcom.component';
@@ -19,6 +20,8 @@ import { BolsaComponent } from './carro/bolsa/bolsa.component';
 import { IndextiendaComponent } from './tienda/indextienda/indextienda.component';
 import { TabsComponent } from './tienda/tabs/tabs.component';
 import { ContenidotiendaComponent } from './tienda/contenidotienda/contenidotienda.component';
+import { RangeventaComponent } from './tienda/rangeventa/rangeventa.component';
+import { RangeprecioComponent } from './tienda/rangeprecio/rangeprecio.component';
 
 @NgModule({
   declarations: [
@@ -39,10 +42,13 @@ import { ContenidotiendaComponent } from './tienda/contenidotienda/contenidotien
     IndextiendaComponent,
     TabsComponent,
     ContenidotiendaComponent,
+    RangeventaComponent,
+    RangeprecioComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgxSliderModule
   ],
   providers: [],
   bootstrap: [AppComponent]
