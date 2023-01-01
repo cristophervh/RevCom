@@ -23,6 +23,10 @@ function increasen() {
 function decreasen() {
   var textBox = document.getElementById("text2");
   textBox.value--;
+  var valor = textBox.value;
+  if (valor < 0 ){
+		textBox.value = 0;    
+  }
 }  
 
 
@@ -46,21 +50,36 @@ function increaseValue() {
   }
 
 
-  /*Funcion2 Duplicada*/
+  /*Funcion2 Duplicada para comision*/
 
   function increaseValue2() {
     var value = parseInt(document.getElementById('number2').value, 10);
     value = isNaN(value) ? 0 : value;
     value++;
+    
+    if (value > 10) {
+		value = 10;    
+    }
     document.getElementById('number2').value = value;
+	 document.getElementById("comision").textContent=value + "%";
+	 var barra = document.getElementById("barra");
+	 barra.value =  value;
   }
   
   function decreaseValue2() {
     var value = parseInt(document.getElementById('number2').value, 10);
     value = isNaN(value) ? 0 : value;
-    value < 1 ? value = 1 : '';
+    //value < 5 ? value = 5 : '';
     value--;
+    
+    if (value < 4) {
+		value = 4;    
+    }
+    
     document.getElementById('number2').value = value;
+    document.getElementById("comision").textContent=value + "%";
+    var barra = document.getElementById("barra");
+	 barra.value =  value;
   }
 
   
