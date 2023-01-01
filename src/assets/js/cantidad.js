@@ -57,8 +57,8 @@ function increaseValue() {
     value = isNaN(value) ? 0 : value;
     value++;
     
-    if (value > 10) {
-		value = 10;    
+    if (value > 30) {
+		value = 30;    
     }
     document.getElementById('number2').value = value;
 	 document.getElementById("comision").textContent=value + "%";
