@@ -1,0 +1,126 @@
+
+
+.Titulo {
+    font-size:35px;
+    margin-top: 10px;
+}
+
+.center {
+    margin: auto;
+    padding: 10px;
+    }
+
+.contenedor-imagenes {
+        display: flex;
+}
+
+.btn {
+        background-image: linear-gradient(-45deg, #28348A, #662482);
+        border:0px;
+       
+    
+}
+
+.center {
+            margin: auto;
+            padding: 10px;
+            width: 1100px;
+}
+
+#myInput {
+    padding: 20px;
+    margin-top: -6px;
+    border: 0;
+    border-radius: 0;
+    background: #f1f1f1;
+  }
+
+  .position-absolute {
+    background-color: #28348A;
+  }
+
+
+  
+
+
+
+  /*2*/
+  .flipCard {
+    -webkit-perspective: 800;
+    -ms-perspective: 800;
+    -moz-perspective: 800;
+    -o-perspective: 800;
+     width: 1100px;
+     position: relative;
+     margin: 50px auto;
+
+     
+  }
+  .flipCard .card.flipped {
+    transform:rotatey(-180deg);
+    -ms-transform:rotatey(-180deg); /* IE 9 */
+    -moz-transform:rotatey(-180deg); /* Firefox */
+    -webkit-transform:rotatey(-180deg); /* Safari and Chrome */
+    -o-transform:rotatey(-180deg); /* Opera */
+    
+  }
+  .flipCard .card {
+    width: 100%;
+    height: 100%;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: 0.5s;
+    -moz-transform-style: preserve-3d;
+    -moz-transition: 0.5s;
+    -ms-transform-style: preserve-3d;
+    -ms-transition: 0.5s;
+    -o-transform-style: preserve-3d;
+    -o-transition: 0.5s;
+    transform-style: preserve-3d;
+    transition: 0.5s;
+  }
+  .flipCard .card .side {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    box-sizing: border-box;
+    z-index: 2;
+    backface-visibility: hidden;  /* W3C */
+    -webkit-backface-visibility: hidden; /* Safari & Chrome */
+    -moz-backface-visibility: hidden; /* Firefox */
+    -ms-backface-visibility: hidden; /* Internet Explorer */
+    -o-backface-visibility: hidden; /* Opera */
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    overflow: auto;
+    border-radius: 10px;  /*redondear Tarjeta*/
+  }
+  .flipCard .card .back {
+    background: white;
+    color: black;
+    transform:rotatey(-180deg);
+    -ms-transform:rotatey(-180deg); /* IE 9 */
+    -moz-transform:rotatey(-180deg); /* Firefox */
+    -webkit-transform:rotatey(-180deg); /* Safari and Chrome */
+    -o-transform:rotatey(-180deg); /* Opera */
+  }
+  
+  .flipCard .card .front {
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+    width: 1100px;
+    height: 250px;
+    overflow-x:hidden;
+    overflow-y:hidden;
+  
+  }
+  .flipCard .card .back {
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+    width: 1100px;
+    height: 250px;
+    overflow-x:hidden;
+    overflow-y:hidden;
+  }

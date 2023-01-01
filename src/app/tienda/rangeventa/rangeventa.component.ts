@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Options } from '@angular-slider/ngx-slider';
+import { Options, LabelType } from "@angular-slider/ngx-slider";
+
 
 
 @Component({
@@ -8,11 +9,21 @@ import { Options } from '@angular-slider/ngx-slider';
   styleUrls: ['./rangeventa.component.css']
 })
 export class RangeventaComponent implements OnInit {
-  value: number = 50;
-  highValue: number = 5000;
+  minValue: number = 0;
+  maxValue: number = 1000;
   options: Options = {
-    floor: 5,
-    ceil: 5000
+    floor: 0,
+    ceil: 1000,
+    translate: (value: number, label: LabelType): string => {
+      switch (label) {
+        case LabelType.Low:
+          return "<b>Mínimo de Ventas:</b> " + value;
+        case LabelType.High:
+          return "<b>Máximo de Ventas:</b> " + value;
+        default:
+          return "" + value;
+      }
+    }
   };
 
   constructor() { }

@@ -7,17 +7,37 @@
     color: white;
     }
     
-    .form-control {
-        border-radius: 0px; /*1*/
-        border-color: #662482;
-        border: 2px solid transparent; /*2*/
-        background: linear-gradient(-45deg, #28348A, #662482); /*3*/
-        -webkit-mask: /*4*/
-        linear-gradient(#fff 0 0) padding-box, 
-        linear-gradient(#fff 0 0);
-        -webkit-mask-composite: xor; /*5'*/
-        mask-composite: exclude; /*5*/
 
 
+.center {
+    margin: auto;
+    padding: 10px;
     }
 
+
+
+
+.btn2 {
+    background-image: linear-gradient(-45deg, #28348A, #662482);
+    width:150px;
+    height: 40px;
+    color: white;
+    }
+            
+.form-control {
+    border: 2px;
+    height: 35px;
+    position: relative;
+    color:rgb(0, 0, 0);
+    background: transparent;  
+    box-shadow: 
+        -1px -1px 0 1px #28348A,
+        1px 1px 0 1px #662482,
+        1px 1px 0 1px #662482,
+        -1px -1px 0 1px #28348A;
+    }
+        
+                
+        
+
+        

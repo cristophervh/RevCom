@@ -8,17 +8,17 @@ import { Options, LabelType } from "@angular-slider/ngx-slider";
   styleUrls: ['./rangeprecio.component.css']
 })
 export class RangeprecioComponent implements OnInit {
-  minValue: number = 100;
-  maxValue: number = 400;
+  minValue: number = 50;
+  maxValue: number = 5000;
   options: Options = {
-    floor: 0,
-    ceil: 500,
+    floor: 50,
+    ceil: 5000,
     translate: (value: number, label: LabelType): string => {
       switch (label) {
         case LabelType.Low:
-          return "<b>Min price:</b> $" + value;
+          return "<b>Precio Mínimo:</b> $" + value;
         case LabelType.High:
-          return "<b>Max price:</b> $" + value;
+          return "<b>Precio Máximo:</b> $" + value;
         default:
           return "$" + value;
       }

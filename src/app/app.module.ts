@@ -22,6 +22,26 @@ import { TabsComponent } from './tienda/tabs/tabs.component';
 import { ContenidotiendaComponent } from './tienda/contenidotienda/contenidotienda.component';
 import { RangeventaComponent } from './tienda/rangeventa/rangeventa.component';
 import { RangeprecioComponent } from './tienda/rangeprecio/rangeprecio.component';
+import { IndexperfilComponent } from './perfil/indexperfil/indexperfil.component';
+import { ContenidoperfilComponent } from './perfil/contenidoperfil/contenidoperfil.component';
+import { IndexcomprasComponent } from './compras/indexcompras/indexcompras.component';
+import { ContenidocomprasComponent } from './compras/contenidocompras/contenidocompras.component';
+import { IndexloginComponent } from './login/indexlogin/indexlogin.component';
+import { ContenidologinComponent } from './login/contenidologin/contenidologin.component';
+import { IndexregistroComponent } from './registro/indexregistro/indexregistro.component';
+import { ContenidoregistroComponent } from './registro/contenidoregistro/contenidoregistro.component';
+import { QuantitybuttonComponent } from './carro/quantitybutton/quantitybutton.component';
+import { IndexcheckoutComponent } from './checkout/indexcheckout/indexcheckout.component';
+import { ContenidocheckoutComponent } from './checkout/contenidocheckout/contenidocheckout.component';
+import { IndexspeiComponent } from './checkout/indexspei/indexspei.component';
+import { ContenidospeiComponent } from './checkout/contenidospei/contenidospei.component';
+import { IndextdcComponent } from './checkout/indextdc/indextdc.component';
+import { ContenidotdcComponent } from './checkout/contenidotdc/contenidotdc.component';
+import { IndexseguimientoComponent } from './checkout/indexseguimiento/indexseguimiento.component';
+import { ContenidoseguimientoComponent } from './checkout/contenidoseguimiento/contenidoseguimiento.component';
+import { IndexsaldoComponent } from './saldo/indexsaldo/indexsaldo.component';
+import { ContenidosaldoComponent } from './saldo/contenidosaldo/contenidosaldo.component';
+
 
 @NgModule({
   declarations: [
@@ -44,6 +64,26 @@ import { RangeprecioComponent } from './tienda/rangeprecio/rangeprecio.component
     ContenidotiendaComponent,
     RangeventaComponent,
     RangeprecioComponent,
+    IndexperfilComponent,
+    ContenidoperfilComponent,
+    IndexcomprasComponent,
+    ContenidocomprasComponent,
+    IndexloginComponent,
+    ContenidologinComponent,
+    IndexregistroComponent,
+    ContenidoregistroComponent,
+    QuantitybuttonComponent,
+    IndexcheckoutComponent,
+    ContenidocheckoutComponent,
+    IndexspeiComponent,
+    ContenidospeiComponent,
+    IndextdcComponent,
+    ContenidotdcComponent,
+    IndexseguimientoComponent,
+    ContenidoseguimientoComponent,
+    IndexsaldoComponent,
+    ContenidosaldoComponent,
+
   ],
   imports: [
     BrowserModule,

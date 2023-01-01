@@ -33,3 +33,9 @@
 /*, .carousel-indicators */ {
     filter: invert(100%);
 }
+
+
+
+a:link {
+    text-decoration: none;     
+  }
