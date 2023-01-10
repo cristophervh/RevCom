@@ -1,8 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule,FormsModule } from "@angular/forms";
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
 import { NgxSliderModule } from '@angular-slider/ngx-slider';
 import { MenuComponent } from './home/menu/menu.component';
 import { FooterComponent } from './home/footer/footer.component';
@@ -84,13 +86,17 @@ import { ContenidosaldoComponent } from './saldo/contenidosaldo/contenidosaldo.c
     IndexsaldoComponent,
     ContenidosaldoComponent,
 
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgxSliderModule
+    NgxSliderModule,
+	 HttpClientModule,
+	 ReactiveFormsModule,
+	 FormsModule,
   ],
-  providers: [],
+  providers: [CookieService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -6,7 +6,7 @@
   <!-- Pills content -->
   <div class="tab-content">
     <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="tab-login">
-      <form>
+      <form [formGroup]="loginForm" (ngSubmit)="onLogin($event, loginForm.value)" novalidate>
         <div class="text-center mb-3">
           <p style="font-size:30px;">Inicia sesión:</p>
           <!--<button type="button" class="btn btn-link btn-floating mx-1">
@@ -38,14 +38,22 @@
   
         <!-- Email input -->
         <div class="form-outline mb-4">
-          <input type="email" id="loginName" class="form-control" />
+          <input type="email" id="loginName" class="form-control" formControlName="email"/>
           <label class="form-label" for="loginName">Email o Nombre de Usuario</label>
+          <div *ngIf="loginForm.get('email').errors && loginForm.get('email').touched">
+          	<p *ngIf="loginForm.get('email').hasError('required')">Es un campo requerido</p> 
+          	<p *ngIf="loginForm.get('email').hasError('email')">Dirección de correo inválida</p>
+          </div>
+          
         </div>
   
         <!-- Password input -->
         <div class="form-outline mb-4">
-          <input type="password" id="loginPassword" class="form-control" />
+          <input type="password" id="loginPassword" class="form-control" formControlName="password"/>
           <label class="form-label" for="loginPassword">Contraseña</label>
+          <div *ngIf="loginForm.get('password').errors && loginForm.get('password').touched">
+          	<p *ngIf="loginForm.get('password').hasError('required')">Es un campo requerido</p> 
+          </div>
         </div>
   
         <!-- 2 column grid layout -->
@@ -65,7 +73,7 @@
         </div>
   
         <!-- Submit button -->
-        <button type="submit" class="btn btn-primary btn-block mb-4" style="width:100%;">Ingresar</button>
+        <button type="submit" [disabled]="loginForm.invalid" class="btn btn-primary btn-block mb-4" style="width:100%;">Ingresar</button>
   
         <!-- Register buttons -->
         <div class="text-center">
